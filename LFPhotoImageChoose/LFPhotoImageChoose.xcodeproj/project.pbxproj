@@ -1,0 +1,859 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		816BDA771FF1EEDB005730FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDA761FF1EEDB005730FC /* AppDelegate.swift */; };
+		816BDA791FF1EEDC005730FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDA781FF1EEDC005730FC /* ViewController.swift */; };
+		816BDA7C1FF1EEDC005730FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816BDA7A1FF1EEDC005730FC /* Main.storyboard */; };
+		816BDA7E1FF1EEDC005730FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 816BDA7D1FF1EEDC005730FC /* Assets.xcassets */; };
+		816BDA811FF1EEDC005730FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816BDA7F1FF1EEDC005730FC /* LaunchScreen.storyboard */; };
+		816BDA8C1FF1EEDC005730FC /* LFPhotoImageChooseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDA8B1FF1EEDC005730FC /* LFPhotoImageChooseTests.swift */; };
+		816BDA971FF1EEDC005730FC /* LFPhotoImageChooseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDA961FF1EEDC005730FC /* LFPhotoImageChooseUITests.swift */; };
+		816BDAAB1FF1F030005730FC /* LFPhotoExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAAA1FF1F030005730FC /* LFPhotoExtension.swift */; };
+		816BDAAD1FF1FACF005730FC /* LFPhotoClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAAC1FF1FACF005730FC /* LFPhotoClosure.swift */; };
+		816BDAAF1FF1FB24005730FC /* LFPublicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAAE1FF1FB24005730FC /* LFPublicViewModel.swift */; };
+		816BDAB11FF1FB7F005730FC /* LFScrollViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAB01FF1FB7F005730FC /* LFScrollViewModel.swift */; };
+		816BDAB41FF1FF96005730FC /* LFBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAB31FF1FF96005730FC /* LFBaseViewModel.swift */; };
+		816BDAB71FF211F8005730FC /* LFPhotoNavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAB61FF211F8005730FC /* LFPhotoNavigationViewModel.swift */; };
+		816BDABA1FF213C4005730FC /* LFPhotoHandleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAB91FF213C4005730FC /* LFPhotoHandleManager.swift */; };
+		816BDABE1FF23060005730FC /* LFPhotoCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDABD1FF23060005730FC /* LFPhotoCacheManager.swift */; };
+		816BDAC01FF2338A005730FC /* LFPhotoBridgeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDABF1FF2338A005730FC /* LFPhotoBridgeManager.swift */; };
+		816BDAC21FF23DDB005730FC /* LFPhotoNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAC11FF23DDB005730FC /* LFPhotoNavigationViewController.swift */; };
+		816BDAC51FF240C7005730FC /* LFPhotoGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAC41FF240C7005730FC /* LFPhotoGroupCell.swift */; };
+		816BDAEB1FF24530005730FC /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAC71FF2452F005730FC /* Constraint.swift */; };
+		816BDAEC1FF24530005730FC /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAC81FF2452F005730FC /* ConstraintAttributes.swift */; };
+		816BDAED1FF24530005730FC /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAC91FF2452F005730FC /* ConstraintConfig.swift */; };
+		816BDAEE1FF24530005730FC /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDACA1FF2452F005730FC /* ConstraintConstantTarget.swift */; };
+		816BDAEF1FF24530005730FC /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDACB1FF2452F005730FC /* ConstraintDescription.swift */; };
+		816BDAF01FF24530005730FC /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDACC1FF2452F005730FC /* ConstraintDSL.swift */; };
+		816BDAF11FF24530005730FC /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDACD1FF2452F005730FC /* ConstraintInsets.swift */; };
+		816BDAF21FF24530005730FC /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDACE1FF2452F005730FC /* ConstraintInsetTarget.swift */; };
+		816BDAF31FF24530005730FC /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDACF1FF2452F005730FC /* ConstraintItem.swift */; };
+		816BDAF41FF24530005730FC /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAD01FF2452F005730FC /* ConstraintLayoutGuide+Extensions.swift */; };
+		816BDAF51FF24530005730FC /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAD11FF2452F005730FC /* ConstraintLayoutGuide.swift */; };
+		816BDAF61FF24530005730FC /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAD21FF2452F005730FC /* ConstraintLayoutGuideDSL.swift */; };
+		816BDAF71FF24530005730FC /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAD31FF2452F005730FC /* ConstraintLayoutSupport.swift */; };
+		816BDAF81FF24530005730FC /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAD41FF2452F005730FC /* ConstraintLayoutSupportDSL.swift */; };
+		816BDAF91FF24530005730FC /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAD51FF2452F005730FC /* ConstraintMaker.swift */; };
+		816BDAFA1FF24530005730FC /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAD61FF2452F005730FC /* ConstraintMakerEditable.swift */; };
+		816BDAFB1FF24530005730FC /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAD71FF2452F005730FC /* ConstraintMakerExtendable.swift */; };
+		816BDAFC1FF24530005730FC /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAD81FF2452F005730FC /* ConstraintMakerFinalizable.swift */; };
+		816BDAFD1FF24530005730FC /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAD91FF2452F005730FC /* ConstraintMakerPriortizable.swift */; };
+		816BDAFE1FF24530005730FC /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDADA1FF2452F005730FC /* ConstraintMakerRelatable.swift */; };
+		816BDAFF1FF24530005730FC /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDADB1FF2452F005730FC /* ConstraintMultiplierTarget.swift */; };
+		816BDB001FF24530005730FC /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDADC1FF2452F005730FC /* ConstraintOffsetTarget.swift */; };
+		816BDB011FF24530005730FC /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDADD1FF2452F005730FC /* ConstraintPriority.swift */; };
+		816BDB021FF24530005730FC /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDADE1FF2452F005730FC /* ConstraintPriorityTarget.swift */; };
+		816BDB031FF24530005730FC /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDADF1FF2452F005730FC /* ConstraintRelatableTarget.swift */; };
+		816BDB041FF24530005730FC /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAE01FF2452F005730FC /* ConstraintRelation.swift */; };
+		816BDB051FF24530005730FC /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAE11FF2452F005730FC /* ConstraintView+Extensions.swift */; };
+		816BDB061FF24530005730FC /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAE21FF2452F005730FC /* ConstraintView.swift */; };
+		816BDB071FF24530005730FC /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAE31FF2452F005730FC /* ConstraintViewDSL.swift */; };
+		816BDB081FF24530005730FC /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAE41FF2452F005730FC /* Debugging.swift */; };
+		816BDB091FF24530005730FC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 816BDAE51FF2452F005730FC /* Info.plist */; };
+		816BDB0A1FF24530005730FC /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAE61FF2452F005730FC /* LayoutConstraint.swift */; };
+		816BDB0B1FF24530005730FC /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAE71FF2452F005730FC /* LayoutConstraintItem.swift */; };
+		816BDB0C1FF24530005730FC /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAE91FF2452F005730FC /* Typealiases.swift */; };
+		816BDB0D1FF24530005730FC /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDAEA1FF2452F005730FC /* UILayoutSupport+Extensions.swift */; };
+		816BDB0F1FF24610005730FC /* LFPhotoGroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDB0E1FF24610005730FC /* LFPhotoGroupViewModel.swift */; };
+		816BDB121FF24D1D005730FC /* LFPhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDB111FF24D1D005730FC /* LFPhotoStore.swift */; };
+		816BDB141FF24DB3005730FC /* LFPhotoConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDB131FF24DB3005730FC /* LFPhotoConfig.swift */; };
+		816BDB161FF24E5B005730FC /* LFPhotoConfigExtern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDB151FF24E5B005730FC /* LFPhotoConfigExtern.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		816BDA881FF1EEDC005730FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 816BDA6B1FF1EEDB005730FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 816BDA721FF1EEDB005730FC;
+			remoteInfo = LFPhotoImageChoose;
+		};
+		816BDA931FF1EEDC005730FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 816BDA6B1FF1EEDB005730FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 816BDA721FF1EEDB005730FC;
+			remoteInfo = LFPhotoImageChoose;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		816BDA731FF1EEDB005730FC /* LFPhotoImageChoose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LFPhotoImageChoose.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		816BDA761FF1EEDB005730FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		816BDA781FF1EEDC005730FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		816BDA7B1FF1EEDC005730FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		816BDA7D1FF1EEDC005730FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		816BDA801FF1EEDC005730FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		816BDA821FF1EEDC005730FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		816BDA871FF1EEDC005730FC /* LFPhotoImageChooseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LFPhotoImageChooseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		816BDA8B1FF1EEDC005730FC /* LFPhotoImageChooseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPhotoImageChooseTests.swift; sourceTree = "<group>"; };
+		816BDA8D1FF1EEDC005730FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		816BDA921FF1EEDC005730FC /* LFPhotoImageChooseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LFPhotoImageChooseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		816BDA961FF1EEDC005730FC /* LFPhotoImageChooseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPhotoImageChooseUITests.swift; sourceTree = "<group>"; };
+		816BDA981FF1EEDC005730FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		816BDAAA1FF1F030005730FC /* LFPhotoExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPhotoExtension.swift; sourceTree = "<group>"; };
+		816BDAAC1FF1FACF005730FC /* LFPhotoClosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPhotoClosure.swift; sourceTree = "<group>"; };
+		816BDAAE1FF1FB24005730FC /* LFPublicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPublicViewModel.swift; sourceTree = "<group>"; };
+		816BDAB01FF1FB7F005730FC /* LFScrollViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFScrollViewModel.swift; sourceTree = "<group>"; };
+		816BDAB31FF1FF96005730FC /* LFBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFBaseViewModel.swift; sourceTree = "<group>"; };
+		816BDAB61FF211F8005730FC /* LFPhotoNavigationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPhotoNavigationViewModel.swift; sourceTree = "<group>"; };
+		816BDAB91FF213C4005730FC /* LFPhotoHandleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPhotoHandleManager.swift; sourceTree = "<group>"; };
+		816BDABD1FF23060005730FC /* LFPhotoCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPhotoCacheManager.swift; sourceTree = "<group>"; };
+		816BDABF1FF2338A005730FC /* LFPhotoBridgeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPhotoBridgeManager.swift; sourceTree = "<group>"; };
+		816BDAC11FF23DDB005730FC /* LFPhotoNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPhotoNavigationViewController.swift; sourceTree = "<group>"; };
+		816BDAC41FF240C7005730FC /* LFPhotoGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPhotoGroupCell.swift; sourceTree = "<group>"; };
+		816BDAC71FF2452F005730FC /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
+		816BDAC81FF2452F005730FC /* ConstraintAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintAttributes.swift; sourceTree = "<group>"; };
+		816BDAC91FF2452F005730FC /* ConstraintConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintConfig.swift; sourceTree = "<group>"; };
+		816BDACA1FF2452F005730FC /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		816BDACB1FF2452F005730FC /* ConstraintDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintDescription.swift; sourceTree = "<group>"; };
+		816BDACC1FF2452F005730FC /* ConstraintDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintDSL.swift; sourceTree = "<group>"; };
+		816BDACD1FF2452F005730FC /* ConstraintInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintInsets.swift; sourceTree = "<group>"; };
+		816BDACE1FF2452F005730FC /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		816BDACF1FF2452F005730FC /* ConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintItem.swift; sourceTree = "<group>"; };
+		816BDAD01FF2452F005730FC /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		816BDAD11FF2452F005730FC /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		816BDAD21FF2452F005730FC /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		816BDAD31FF2452F005730FC /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		816BDAD41FF2452F005730FC /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		816BDAD51FF2452F005730FC /* ConstraintMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMaker.swift; sourceTree = "<group>"; };
+		816BDAD61FF2452F005730FC /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		816BDAD71FF2452F005730FC /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		816BDAD81FF2452F005730FC /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		816BDAD91FF2452F005730FC /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		816BDADA1FF2452F005730FC /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		816BDADB1FF2452F005730FC /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		816BDADC1FF2452F005730FC /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		816BDADD1FF2452F005730FC /* ConstraintPriority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintPriority.swift; sourceTree = "<group>"; };
+		816BDADE1FF2452F005730FC /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		816BDADF1FF2452F005730FC /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		816BDAE01FF2452F005730FC /* ConstraintRelation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintRelation.swift; sourceTree = "<group>"; };
+		816BDAE11FF2452F005730FC /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		816BDAE21FF2452F005730FC /* ConstraintView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintView.swift; sourceTree = "<group>"; };
+		816BDAE31FF2452F005730FC /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		816BDAE41FF2452F005730FC /* Debugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
+		816BDAE51FF2452F005730FC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		816BDAE61FF2452F005730FC /* LayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
+		816BDAE71FF2452F005730FC /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		816BDAE81FF2452F005730FC /* SnapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapKit.h; sourceTree = "<group>"; };
+		816BDAE91FF2452F005730FC /* Typealiases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
+		816BDAEA1FF2452F005730FC /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		816BDB0E1FF24610005730FC /* LFPhotoGroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPhotoGroupViewModel.swift; sourceTree = "<group>"; };
+		816BDB111FF24D1D005730FC /* LFPhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPhotoStore.swift; sourceTree = "<group>"; };
+		816BDB131FF24DB3005730FC /* LFPhotoConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPhotoConfig.swift; sourceTree = "<group>"; };
+		816BDB151FF24E5B005730FC /* LFPhotoConfigExtern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPhotoConfigExtern.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		816BDA701FF1EEDB005730FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		816BDA841FF1EEDC005730FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		816BDA8F1FF1EEDC005730FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		816BDA6A1FF1EEDB005730FC = {
+			isa = PBXGroup;
+			children = (
+				816BDA751FF1EEDB005730FC /* LFPhotoImageChoose */,
+				816BDA8A1FF1EEDC005730FC /* LFPhotoImageChooseTests */,
+				816BDA951FF1EEDC005730FC /* LFPhotoImageChooseUITests */,
+				816BDA741FF1EEDB005730FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		816BDA741FF1EEDB005730FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				816BDA731FF1EEDB005730FC /* LFPhotoImageChoose.app */,
+				816BDA871FF1EEDC005730FC /* LFPhotoImageChooseTests.xctest */,
+				816BDA921FF1EEDC005730FC /* LFPhotoImageChooseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		816BDA751FF1EEDB005730FC /* LFPhotoImageChoose */ = {
+			isa = PBXGroup;
+			children = (
+				816BDAC61FF2452F005730FC /* Source */,
+				816BDAA41FF1EFFB005730FC /* LFImagePicker */,
+				816BDA761FF1EEDB005730FC /* AppDelegate.swift */,
+				816BDA781FF1EEDC005730FC /* ViewController.swift */,
+				816BDA7A1FF1EEDC005730FC /* Main.storyboard */,
+				816BDA7D1FF1EEDC005730FC /* Assets.xcassets */,
+				816BDA7F1FF1EEDC005730FC /* LaunchScreen.storyboard */,
+				816BDA821FF1EEDC005730FC /* Info.plist */,
+			);
+			path = LFPhotoImageChoose;
+			sourceTree = "<group>";
+		};
+		816BDA8A1FF1EEDC005730FC /* LFPhotoImageChooseTests */ = {
+			isa = PBXGroup;
+			children = (
+				816BDA8B1FF1EEDC005730FC /* LFPhotoImageChooseTests.swift */,
+				816BDA8D1FF1EEDC005730FC /* Info.plist */,
+			);
+			path = LFPhotoImageChooseTests;
+			sourceTree = "<group>";
+		};
+		816BDA951FF1EEDC005730FC /* LFPhotoImageChooseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				816BDA961FF1EEDC005730FC /* LFPhotoImageChooseUITests.swift */,
+				816BDA981FF1EEDC005730FC /* Info.plist */,
+			);
+			path = LFPhotoImageChooseUITests;
+			sourceTree = "<group>";
+		};
+		816BDAA41FF1EFFB005730FC /* LFImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				816BDAA61FF1EFFB005730FC /* Tool */,
+				816BDAA51FF1EFFB005730FC /* Photofiles */,
+			);
+			path = LFImagePicker;
+			sourceTree = "<group>";
+		};
+		816BDAA51FF1EFFB005730FC /* Photofiles */ = {
+			isa = PBXGroup;
+			children = (
+				816BDAB21FF1FF6B005730FC /* BaseClass */,
+				816BDAB51FF211C6005730FC /* Navigation */,
+				816BDAC31FF2408F005730FC /* Group */,
+				816BDB101FF24CF8005730FC /* PhotoStore */,
+				816BDAB81FF21363005730FC /* PhotoManager */,
+			);
+			path = Photofiles;
+			sourceTree = "<group>";
+		};
+		816BDAA61FF1EFFB005730FC /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				816BDAA71FF1EFFB005730FC /* ChooseImageExtension */,
+				816BDAA81FF1EFFB005730FC /* Closure */,
+				816BDAA91FF1EFFB005730FC /* Protocol */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		816BDAA71FF1EFFB005730FC /* ChooseImageExtension */ = {
+			isa = PBXGroup;
+			children = (
+				816BDAAA1FF1F030005730FC /* LFPhotoExtension.swift */,
+			);
+			path = ChooseImageExtension;
+			sourceTree = "<group>";
+		};
+		816BDAA81FF1EFFB005730FC /* Closure */ = {
+			isa = PBXGroup;
+			children = (
+				816BDAAC1FF1FACF005730FC /* LFPhotoClosure.swift */,
+			);
+			path = Closure;
+			sourceTree = "<group>";
+		};
+		816BDAA91FF1EFFB005730FC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				816BDAAE1FF1FB24005730FC /* LFPublicViewModel.swift */,
+				816BDAB01FF1FB7F005730FC /* LFScrollViewModel.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		816BDAB21FF1FF6B005730FC /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				816BDAB31FF1FF96005730FC /* LFBaseViewModel.swift */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		816BDAB51FF211C6005730FC /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				816BDAB61FF211F8005730FC /* LFPhotoNavigationViewModel.swift */,
+				816BDAC11FF23DDB005730FC /* LFPhotoNavigationViewController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		816BDAB81FF21363005730FC /* PhotoManager */ = {
+			isa = PBXGroup;
+			children = (
+				816BDAB91FF213C4005730FC /* LFPhotoHandleManager.swift */,
+				816BDABD1FF23060005730FC /* LFPhotoCacheManager.swift */,
+				816BDABF1FF2338A005730FC /* LFPhotoBridgeManager.swift */,
+			);
+			path = PhotoManager;
+			sourceTree = "<group>";
+		};
+		816BDAC31FF2408F005730FC /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				816BDAC41FF240C7005730FC /* LFPhotoGroupCell.swift */,
+				816BDB0E1FF24610005730FC /* LFPhotoGroupViewModel.swift */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		816BDAC61FF2452F005730FC /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				816BDAC71FF2452F005730FC /* Constraint.swift */,
+				816BDAC81FF2452F005730FC /* ConstraintAttributes.swift */,
+				816BDAC91FF2452F005730FC /* ConstraintConfig.swift */,
+				816BDACA1FF2452F005730FC /* ConstraintConstantTarget.swift */,
+				816BDACB1FF2452F005730FC /* ConstraintDescription.swift */,
+				816BDACC1FF2452F005730FC /* ConstraintDSL.swift */,
+				816BDACD1FF2452F005730FC /* ConstraintInsets.swift */,
+				816BDACE1FF2452F005730FC /* ConstraintInsetTarget.swift */,
+				816BDACF1FF2452F005730FC /* ConstraintItem.swift */,
+				816BDAD01FF2452F005730FC /* ConstraintLayoutGuide+Extensions.swift */,
+				816BDAD11FF2452F005730FC /* ConstraintLayoutGuide.swift */,
+				816BDAD21FF2452F005730FC /* ConstraintLayoutGuideDSL.swift */,
+				816BDAD31FF2452F005730FC /* ConstraintLayoutSupport.swift */,
+				816BDAD41FF2452F005730FC /* ConstraintLayoutSupportDSL.swift */,
+				816BDAD51FF2452F005730FC /* ConstraintMaker.swift */,
+				816BDAD61FF2452F005730FC /* ConstraintMakerEditable.swift */,
+				816BDAD71FF2452F005730FC /* ConstraintMakerExtendable.swift */,
+				816BDAD81FF2452F005730FC /* ConstraintMakerFinalizable.swift */,
+				816BDAD91FF2452F005730FC /* ConstraintMakerPriortizable.swift */,
+				816BDADA1FF2452F005730FC /* ConstraintMakerRelatable.swift */,
+				816BDADB1FF2452F005730FC /* ConstraintMultiplierTarget.swift */,
+				816BDADC1FF2452F005730FC /* ConstraintOffsetTarget.swift */,
+				816BDADD1FF2452F005730FC /* ConstraintPriority.swift */,
+				816BDADE1FF2452F005730FC /* ConstraintPriorityTarget.swift */,
+				816BDADF1FF2452F005730FC /* ConstraintRelatableTarget.swift */,
+				816BDAE01FF2452F005730FC /* ConstraintRelation.swift */,
+				816BDAE11FF2452F005730FC /* ConstraintView+Extensions.swift */,
+				816BDAE21FF2452F005730FC /* ConstraintView.swift */,
+				816BDAE31FF2452F005730FC /* ConstraintViewDSL.swift */,
+				816BDAE41FF2452F005730FC /* Debugging.swift */,
+				816BDAE51FF2452F005730FC /* Info.plist */,
+				816BDAE61FF2452F005730FC /* LayoutConstraint.swift */,
+				816BDAE71FF2452F005730FC /* LayoutConstraintItem.swift */,
+				816BDAE81FF2452F005730FC /* SnapKit.h */,
+				816BDAE91FF2452F005730FC /* Typealiases.swift */,
+				816BDAEA1FF2452F005730FC /* UILayoutSupport+Extensions.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		816BDB101FF24CF8005730FC /* PhotoStore */ = {
+			isa = PBXGroup;
+			children = (
+				816BDB111FF24D1D005730FC /* LFPhotoStore.swift */,
+				816BDB151FF24E5B005730FC /* LFPhotoConfigExtern.swift */,
+				816BDB131FF24DB3005730FC /* LFPhotoConfig.swift */,
+			);
+			path = PhotoStore;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		816BDA721FF1EEDB005730FC /* LFPhotoImageChoose */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 816BDA9B1FF1EEDC005730FC /* Build configuration list for PBXNativeTarget "LFPhotoImageChoose" */;
+			buildPhases = (
+				816BDA6F1FF1EEDB005730FC /* Sources */,
+				816BDA701FF1EEDB005730FC /* Frameworks */,
+				816BDA711FF1EEDB005730FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LFPhotoImageChoose;
+			productName = LFPhotoImageChoose;
+			productReference = 816BDA731FF1EEDB005730FC /* LFPhotoImageChoose.app */;
+			productType = "com.apple.product-type.application";
+		};
+		816BDA861FF1EEDC005730FC /* LFPhotoImageChooseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 816BDA9E1FF1EEDC005730FC /* Build configuration list for PBXNativeTarget "LFPhotoImageChooseTests" */;
+			buildPhases = (
+				816BDA831FF1EEDC005730FC /* Sources */,
+				816BDA841FF1EEDC005730FC /* Frameworks */,
+				816BDA851FF1EEDC005730FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				816BDA891FF1EEDC005730FC /* PBXTargetDependency */,
+			);
+			name = LFPhotoImageChooseTests;
+			productName = LFPhotoImageChooseTests;
+			productReference = 816BDA871FF1EEDC005730FC /* LFPhotoImageChooseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		816BDA911FF1EEDC005730FC /* LFPhotoImageChooseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 816BDAA11FF1EEDC005730FC /* Build configuration list for PBXNativeTarget "LFPhotoImageChooseUITests" */;
+			buildPhases = (
+				816BDA8E1FF1EEDC005730FC /* Sources */,
+				816BDA8F1FF1EEDC005730FC /* Frameworks */,
+				816BDA901FF1EEDC005730FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				816BDA941FF1EEDC005730FC /* PBXTargetDependency */,
+			);
+			name = LFPhotoImageChooseUITests;
+			productName = LFPhotoImageChooseUITests;
+			productReference = 816BDA921FF1EEDC005730FC /* LFPhotoImageChooseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		816BDA6B1FF1EEDB005730FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "ios开发";
+				TargetAttributes = {
+					816BDA721FF1EEDB005730FC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					816BDA861FF1EEDC005730FC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 816BDA721FF1EEDB005730FC;
+					};
+					816BDA911FF1EEDC005730FC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 816BDA721FF1EEDB005730FC;
+					};
+				};
+			};
+			buildConfigurationList = 816BDA6E1FF1EEDB005730FC /* Build configuration list for PBXProject "LFPhotoImageChoose" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 816BDA6A1FF1EEDB005730FC;
+			productRefGroup = 816BDA741FF1EEDB005730FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				816BDA721FF1EEDB005730FC /* LFPhotoImageChoose */,
+				816BDA861FF1EEDC005730FC /* LFPhotoImageChooseTests */,
+				816BDA911FF1EEDC005730FC /* LFPhotoImageChooseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		816BDA711FF1EEDB005730FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				816BDB091FF24530005730FC /* Info.plist in Resources */,
+				816BDA811FF1EEDC005730FC /* LaunchScreen.storyboard in Resources */,
+				816BDA7E1FF1EEDC005730FC /* Assets.xcassets in Resources */,
+				816BDA7C1FF1EEDC005730FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		816BDA851FF1EEDC005730FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		816BDA901FF1EEDC005730FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		816BDA6F1FF1EEDB005730FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				816BDAF61FF24530005730FC /* ConstraintLayoutGuideDSL.swift in Sources */,
+				816BDAAD1FF1FACF005730FC /* LFPhotoClosure.swift in Sources */,
+				816BDB0B1FF24530005730FC /* LayoutConstraintItem.swift in Sources */,
+				816BDAAB1FF1F030005730FC /* LFPhotoExtension.swift in Sources */,
+				816BDAEB1FF24530005730FC /* Constraint.swift in Sources */,
+				816BDAEC1FF24530005730FC /* ConstraintAttributes.swift in Sources */,
+				816BDB051FF24530005730FC /* ConstraintView+Extensions.swift in Sources */,
+				816BDAF01FF24530005730FC /* ConstraintDSL.swift in Sources */,
+				816BDAF71FF24530005730FC /* ConstraintLayoutSupport.swift in Sources */,
+				816BDB081FF24530005730FC /* Debugging.swift in Sources */,
+				816BDAAF1FF1FB24005730FC /* LFPublicViewModel.swift in Sources */,
+				816BDAC51FF240C7005730FC /* LFPhotoGroupCell.swift in Sources */,
+				816BDAF91FF24530005730FC /* ConstraintMaker.swift in Sources */,
+				816BDB0A1FF24530005730FC /* LayoutConstraint.swift in Sources */,
+				816BDB061FF24530005730FC /* ConstraintView.swift in Sources */,
+				816BDAB11FF1FB7F005730FC /* LFScrollViewModel.swift in Sources */,
+				816BDAF11FF24530005730FC /* ConstraintInsets.swift in Sources */,
+				816BDAC01FF2338A005730FC /* LFPhotoBridgeManager.swift in Sources */,
+				816BDAB41FF1FF96005730FC /* LFBaseViewModel.swift in Sources */,
+				816BDB0D1FF24530005730FC /* UILayoutSupport+Extensions.swift in Sources */,
+				816BDA791FF1EEDC005730FC /* ViewController.swift in Sources */,
+				816BDB001FF24530005730FC /* ConstraintOffsetTarget.swift in Sources */,
+				816BDAC21FF23DDB005730FC /* LFPhotoNavigationViewController.swift in Sources */,
+				816BDB161FF24E5B005730FC /* LFPhotoConfigExtern.swift in Sources */,
+				816BDAF21FF24530005730FC /* ConstraintInsetTarget.swift in Sources */,
+				816BDB031FF24530005730FC /* ConstraintRelatableTarget.swift in Sources */,
+				816BDAFE1FF24530005730FC /* ConstraintMakerRelatable.swift in Sources */,
+				816BDAF41FF24530005730FC /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				816BDB0C1FF24530005730FC /* Typealiases.swift in Sources */,
+				816BDAFC1FF24530005730FC /* ConstraintMakerFinalizable.swift in Sources */,
+				816BDAF81FF24530005730FC /* ConstraintLayoutSupportDSL.swift in Sources */,
+				816BDAF51FF24530005730FC /* ConstraintLayoutGuide.swift in Sources */,
+				816BDB021FF24530005730FC /* ConstraintPriorityTarget.swift in Sources */,
+				816BDABA1FF213C4005730FC /* LFPhotoHandleManager.swift in Sources */,
+				816BDAF31FF24530005730FC /* ConstraintItem.swift in Sources */,
+				816BDAFF1FF24530005730FC /* ConstraintMultiplierTarget.swift in Sources */,
+				816BDB011FF24530005730FC /* ConstraintPriority.swift in Sources */,
+				816BDAED1FF24530005730FC /* ConstraintConfig.swift in Sources */,
+				816BDAFD1FF24530005730FC /* ConstraintMakerPriortizable.swift in Sources */,
+				816BDAFB1FF24530005730FC /* ConstraintMakerExtendable.swift in Sources */,
+				816BDABE1FF23060005730FC /* LFPhotoCacheManager.swift in Sources */,
+				816BDAB71FF211F8005730FC /* LFPhotoNavigationViewModel.swift in Sources */,
+				816BDA771FF1EEDB005730FC /* AppDelegate.swift in Sources */,
+				816BDAEE1FF24530005730FC /* ConstraintConstantTarget.swift in Sources */,
+				816BDB0F1FF24610005730FC /* LFPhotoGroupViewModel.swift in Sources */,
+				816BDB121FF24D1D005730FC /* LFPhotoStore.swift in Sources */,
+				816BDAFA1FF24530005730FC /* ConstraintMakerEditable.swift in Sources */,
+				816BDB041FF24530005730FC /* ConstraintRelation.swift in Sources */,
+				816BDAEF1FF24530005730FC /* ConstraintDescription.swift in Sources */,
+				816BDB141FF24DB3005730FC /* LFPhotoConfig.swift in Sources */,
+				816BDB071FF24530005730FC /* ConstraintViewDSL.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		816BDA831FF1EEDC005730FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				816BDA8C1FF1EEDC005730FC /* LFPhotoImageChooseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		816BDA8E1FF1EEDC005730FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				816BDA971FF1EEDC005730FC /* LFPhotoImageChooseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		816BDA891FF1EEDC005730FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 816BDA721FF1EEDB005730FC /* LFPhotoImageChoose */;
+			targetProxy = 816BDA881FF1EEDC005730FC /* PBXContainerItemProxy */;
+		};
+		816BDA941FF1EEDC005730FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 816BDA721FF1EEDB005730FC /* LFPhotoImageChoose */;
+			targetProxy = 816BDA931FF1EEDC005730FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		816BDA7A1FF1EEDC005730FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				816BDA7B1FF1EEDC005730FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		816BDA7F1FF1EEDC005730FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				816BDA801FF1EEDC005730FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		816BDA991FF1EEDC005730FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		816BDA9A1FF1EEDC005730FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		816BDA9C1FF1EEDC005730FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5XS36RNMEV;
+				INFOPLIST_FILE = LFPhotoImageChoose/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YY.LFPhotoImageChoose;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		816BDA9D1FF1EEDC005730FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5XS36RNMEV;
+				INFOPLIST_FILE = LFPhotoImageChoose/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YY.LFPhotoImageChoose;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		816BDA9F1FF1EEDC005730FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LFPhotoImageChooseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YY.LFPhotoImageChooseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LFPhotoImageChoose.app/LFPhotoImageChoose";
+			};
+			name = Debug;
+		};
+		816BDAA01FF1EEDC005730FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LFPhotoImageChooseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YY.LFPhotoImageChooseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LFPhotoImageChoose.app/LFPhotoImageChoose";
+			};
+			name = Release;
+		};
+		816BDAA21FF1EEDC005730FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LFPhotoImageChooseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YY.LFPhotoImageChooseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LFPhotoImageChoose;
+			};
+			name = Debug;
+		};
+		816BDAA31FF1EEDC005730FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LFPhotoImageChooseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YY.LFPhotoImageChooseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LFPhotoImageChoose;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		816BDA6E1FF1EEDB005730FC /* Build configuration list for PBXProject "LFPhotoImageChoose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				816BDA991FF1EEDC005730FC /* Debug */,
+				816BDA9A1FF1EEDC005730FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		816BDA9B1FF1EEDC005730FC /* Build configuration list for PBXNativeTarget "LFPhotoImageChoose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				816BDA9C1FF1EEDC005730FC /* Debug */,
+				816BDA9D1FF1EEDC005730FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		816BDA9E1FF1EEDC005730FC /* Build configuration list for PBXNativeTarget "LFPhotoImageChooseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				816BDA9F1FF1EEDC005730FC /* Debug */,
+				816BDAA01FF1EEDC005730FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		816BDAA11FF1EEDC005730FC /* Build configuration list for PBXNativeTarget "LFPhotoImageChooseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				816BDAA21FF1EEDC005730FC /* Debug */,
+				816BDAA31FF1EEDC005730FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 816BDA6B1FF1EEDB005730FC /* Project object */;
+}
