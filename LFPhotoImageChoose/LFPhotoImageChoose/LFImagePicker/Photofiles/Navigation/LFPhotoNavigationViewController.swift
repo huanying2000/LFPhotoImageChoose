@@ -17,7 +17,7 @@ class LFPhotoNavigationViewController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        self.viewControllers =
+        self.viewControllers = [LFPhotoGroupViewController()]
         
     }
 

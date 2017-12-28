@@ -15,6 +15,31 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    @IBAction func chooseImage(_ sender: Any) {
+        //获得控制器
+        let viewController : LFPhotoNavigationViewController = LFPhotoNavigationViewController()
+        
+        //设置viewModel属性
+        let viewModel = viewController.viewModel
+        
+        // 获得图片
+        viewModel.completeUsingImage = {(images) in
+            
+           print("得到的照片  \(images)")
+        }
+        
+        // 获得资源的data数据
+        viewModel.completeUsingData = {(datas) in
+            
+            //coding for data ex: uploading..
+            print("data = \(datas)")
+        }
+        
+        
+        
+        self.present(viewController, animated: true) {}
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

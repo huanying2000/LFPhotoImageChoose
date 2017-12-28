@@ -46,33 +46,35 @@ extension Int {
         }
         return "\(self)B"
     }
+    
+    /// 16进制数值获得颜色
+    public var lf_color : UIColor {
+        
+        guard self > 0 else {
+            
+            return UIColor.white
+        }
+        
+        let red = (CGFloat)((self & 0xFF0000) >> 16) / 255.0
+        let green = (CGFloat)((self & 0xFF00) >> 8) / 255.0
+        let blue = (CGFloat)((self & 0xFF)) / 255.0
+        
+        
+        if #available(iOS 10, *)
+        {
+            return UIColor(displayP3Red:red , green: green, blue: blue, alpha: 1.0)
+        }
+        
+        guard #available(iOS 10, *) else {
+            
+            return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
+        }
+        
+        return UIColor.black
+    }
 }
 
-/// 16进制数值获得颜色
-public var lf_color : UIColor {
-    
-    guard self > 0 else {
-        
-        return UIColor.white
-    }
-    
-    let red = (CGFloat)((self & 0xFF0000) >> 16) / 255.0
-    let green = (CGFloat)((self & 0xFF00) >> 8) / 255.0
-    let blue = (CGFloat)((self & 0xFF)) / 255.0
-    
-    
-    if #available(iOS 10, *)
-    {
-        return UIColor(displayP3Red:red , green: green, blue: blue, alpha: 1.0)
-    }
-    
-    guard #available(iOS 10, *) else {
-        
-        return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
-    }
-    
-    return UIColor.black
-}
+
 
 extension TimeInterval {
     
@@ -115,12 +117,12 @@ extension UIControl {
             return
         }
         
-        objc_setAssociatedObject(self, LFPhotosAssociate.LF_ControlHandleValue, actionHandle, objc_AssociationPolicy.OBJC_ASSOCIATION_COPY_NONATOMIC)
+        objc_setAssociatedObject(self, LFPhotosAssociate.LF_ControlHandleValue!, actionHandle, objc_AssociationPolicy.OBJC_ASSOCIATION_COPY_NONATOMIC)
         self.addTarget(self, action: #selector(UIControl.lf_actionHandle), for: state)
     }
     
     @objc fileprivate func lf_actionHandle() {
-        guard let actionhandle = objc_getAssociatedObject(self, LFPhotosAssociate.LF_ControlHandleValue) else {
+        guard let actionhandle = objc_getAssociatedObject(self, LFPhotosAssociate.LF_ControlHandleValue!) else {
             return
         }
         
@@ -137,7 +139,7 @@ extension UIGestureRecognizer
     /// 用于替代目标动作回调的方法
     ///
     /// - Parameter handle: 执行的闭包
-    func action(_ handle:RITLGestureClosure?)
+    func action(_ handle:LFGestureClosure?)
     {
         guard let handle = handle else {
             
@@ -145,7 +147,7 @@ extension UIGestureRecognizer
         }
         
         //缓存
-        objc_setAssociatedObject(self, LFPhotosAssociate.LF_GestureHandleValue, handle, objc_AssociationPolicy.OBJC_ASSOCIATION_COPY_NONATOMIC)
+        objc_setAssociatedObject(self, LFPhotosAssociate.LF_GestureHandleValue!, handle, objc_AssociationPolicy.OBJC_ASSOCIATION_COPY_NONATOMIC)
         
         //添加
         self.addTarget(self, action: #selector(UIGestureRecognizer.lf_actionHandle))
@@ -155,7 +157,7 @@ extension UIGestureRecognizer
     @objc fileprivate func lf_actionHandle()
     {
         //执行
-        (objc_getAssociatedObject(self, LFPhotosAssociate.LF_GestureHandleValue) as! RITLGestureClosure)(self)
+        (objc_getAssociatedObject(self, LFPhotosAssociate.LF_GestureHandleValue!) as! LFGestureClosure)(self)
         
     }
 }

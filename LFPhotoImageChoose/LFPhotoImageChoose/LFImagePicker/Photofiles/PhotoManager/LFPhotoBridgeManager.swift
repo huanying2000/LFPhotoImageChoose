@@ -27,8 +27,23 @@ class LFPhotoBridgeManager: NSObject {
         //如果是原图 忽略size
         let isIgnore = size.width < 0
         
-        //是否为高清图
+        //是否为高清图 默认为false
         let isHightQuarity = LFPhotoCacheManager.sharedInstance.isHightQuarity
+        //请求图片
+        LFPhotoRequestStore.startRequestImage(imagesIn: assets, isHight: isHightQuarity, size: size, ignoreSize: isIgnore) { (images) in
+            
+            self.completeUsingImage?(images)
+            
+        }
+        
+        //请求数据的时候 可以打开
+//        LFPhotoRequestStore.startRequestData(imagesIn: assets, isHight: isHightQuarity) { (datas) in
+//            //获取晚图片之后 执行闭包 传递数据
+//            self.completeUsingData?(datas)
+//        }
+        
+        
+        
     }
     
 }

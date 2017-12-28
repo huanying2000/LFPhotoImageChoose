@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8107F8C11FF33EC500A4039F /* LFPhotoRequestStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8107F8C01FF33EC500A4039F /* LFPhotoRequestStore.swift */; };
+		8107F8C31FF36BDE00A4039F /* LFPhotoGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8107F8C21FF36BDE00A4039F /* LFPhotoGroupViewController.swift */; };
+		8107F8C61FF373CA00A4039F /* LFPhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8107F8C51FF373CA00A4039F /* LFPhotosCell.swift */; };
+		8107F8C81FF37D6600A4039F /* LFPhotoBottomReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8107F8C71FF37D6600A4039F /* LFPhotoBottomReusableView.swift */; };
+		8107F8CA1FF37F3400A4039F /* LFPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8107F8C91FF37F3400A4039F /* LFPhotosViewController.swift */; };
+		8107F8CC1FF3809A00A4039F /* LFPhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8107F8CB1FF3809A00A4039F /* LFPhotosViewModel.swift */; };
+		815F9BED1FF49F0D00AA5F67 /* LFPhotoPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815F9BEC1FF49F0D00AA5F67 /* LFPhotoPreviewController.swift */; };
+		815F9BF01FF4A25A00AA5F67 /* LFPhotoBrowseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815F9BEF1FF4A25A00AA5F67 /* LFPhotoBrowseCell.swift */; };
+		815F9BF21FF4D0CE00AA5F67 /* LFPhotoBrowseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815F9BF11FF4D0CE00AA5F67 /* LFPhotoBrowseController.swift */; };
+		815F9BF41FF4D0FF00AA5F67 /* LFPhotoBrowseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815F9BF31FF4D0FF00AA5F67 /* LFPhotoBrowseViewModel.swift */; };
 		816BDA771FF1EEDB005730FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDA761FF1EEDB005730FC /* AppDelegate.swift */; };
 		816BDA791FF1EEDC005730FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BDA781FF1EEDC005730FC /* ViewController.swift */; };
 		816BDA7C1FF1EEDC005730FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816BDA7A1FF1EEDC005730FC /* Main.storyboard */; };
@@ -84,6 +94,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8107F8C01FF33EC500A4039F /* LFPhotoRequestStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPhotoRequestStore.swift; sourceTree = "<group>"; };
+		8107F8C21FF36BDE00A4039F /* LFPhotoGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPhotoGroupViewController.swift; sourceTree = "<group>"; };
+		8107F8C51FF373CA00A4039F /* LFPhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPhotosCell.swift; sourceTree = "<group>"; };
+		8107F8C71FF37D6600A4039F /* LFPhotoBottomReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPhotoBottomReusableView.swift; sourceTree = "<group>"; };
+		8107F8C91FF37F3400A4039F /* LFPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPhotosViewController.swift; sourceTree = "<group>"; };
+		8107F8CB1FF3809A00A4039F /* LFPhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPhotosViewModel.swift; sourceTree = "<group>"; };
+		815F9BEC1FF49F0D00AA5F67 /* LFPhotoPreviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPhotoPreviewController.swift; sourceTree = "<group>"; };
+		815F9BEF1FF4A25A00AA5F67 /* LFPhotoBrowseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPhotoBrowseCell.swift; sourceTree = "<group>"; };
+		815F9BF11FF4D0CE00AA5F67 /* LFPhotoBrowseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPhotoBrowseController.swift; sourceTree = "<group>"; };
+		815F9BF31FF4D0FF00AA5F67 /* LFPhotoBrowseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPhotoBrowseViewModel.swift; sourceTree = "<group>"; };
 		816BDA731FF1EEDB005730FC /* LFPhotoImageChoose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LFPhotoImageChoose.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		816BDA761FF1EEDB005730FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		816BDA781FF1EEDC005730FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +195,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8107F8C41FF3738C00A4039F /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				8107F8C51FF373CA00A4039F /* LFPhotosCell.swift */,
+				8107F8C71FF37D6600A4039F /* LFPhotoBottomReusableView.swift */,
+				8107F8C91FF37F3400A4039F /* LFPhotosViewController.swift */,
+				8107F8CB1FF3809A00A4039F /* LFPhotosViewModel.swift */,
+				815F9BEC1FF49F0D00AA5F67 /* LFPhotoPreviewController.swift */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		815F9BEE1FF4A22200AA5F67 /* Browse */ = {
+			isa = PBXGroup;
+			children = (
+				815F9BEF1FF4A25A00AA5F67 /* LFPhotoBrowseCell.swift */,
+				815F9BF11FF4D0CE00AA5F67 /* LFPhotoBrowseController.swift */,
+				815F9BF31FF4D0FF00AA5F67 /* LFPhotoBrowseViewModel.swift */,
+			);
+			path = Browse;
+			sourceTree = "<group>";
+		};
 		816BDA6A1FF1EEDB005730FC = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +285,8 @@
 				816BDAB21FF1FF6B005730FC /* BaseClass */,
 				816BDAB51FF211C6005730FC /* Navigation */,
 				816BDAC31FF2408F005730FC /* Group */,
+				8107F8C41FF3738C00A4039F /* Photo */,
+				815F9BEE1FF4A22200AA5F67 /* Browse */,
 				816BDB101FF24CF8005730FC /* PhotoStore */,
 				816BDAB81FF21363005730FC /* PhotoManager */,
 			);
@@ -316,6 +360,7 @@
 			children = (
 				816BDAC41FF240C7005730FC /* LFPhotoGroupCell.swift */,
 				816BDB0E1FF24610005730FC /* LFPhotoGroupViewModel.swift */,
+				8107F8C21FF36BDE00A4039F /* LFPhotoGroupViewController.swift */,
 			);
 			path = Group;
 			sourceTree = "<group>";
@@ -367,6 +412,7 @@
 			isa = PBXGroup;
 			children = (
 				816BDB111FF24D1D005730FC /* LFPhotoStore.swift */,
+				8107F8C01FF33EC500A4039F /* LFPhotoRequestStore.swift */,
 				816BDB151FF24E5B005730FC /* LFPhotoConfigExtern.swift */,
 				816BDB131FF24DB3005730FC /* LFPhotoConfig.swift */,
 			);
@@ -513,13 +559,16 @@
 				816BDB0B1FF24530005730FC /* LayoutConstraintItem.swift in Sources */,
 				816BDAAB1FF1F030005730FC /* LFPhotoExtension.swift in Sources */,
 				816BDAEB1FF24530005730FC /* Constraint.swift in Sources */,
+				815F9BF01FF4A25A00AA5F67 /* LFPhotoBrowseCell.swift in Sources */,
 				816BDAEC1FF24530005730FC /* ConstraintAttributes.swift in Sources */,
 				816BDB051FF24530005730FC /* ConstraintView+Extensions.swift in Sources */,
 				816BDAF01FF24530005730FC /* ConstraintDSL.swift in Sources */,
 				816BDAF71FF24530005730FC /* ConstraintLayoutSupport.swift in Sources */,
 				816BDB081FF24530005730FC /* Debugging.swift in Sources */,
+				8107F8C11FF33EC500A4039F /* LFPhotoRequestStore.swift in Sources */,
 				816BDAAF1FF1FB24005730FC /* LFPublicViewModel.swift in Sources */,
 				816BDAC51FF240C7005730FC /* LFPhotoGroupCell.swift in Sources */,
+				8107F8CA1FF37F3400A4039F /* LFPhotosViewController.swift in Sources */,
 				816BDAF91FF24530005730FC /* ConstraintMaker.swift in Sources */,
 				816BDB0A1FF24530005730FC /* LayoutConstraint.swift in Sources */,
 				816BDB061FF24530005730FC /* ConstraintView.swift in Sources */,
@@ -534,6 +583,7 @@
 				816BDB161FF24E5B005730FC /* LFPhotoConfigExtern.swift in Sources */,
 				816BDAF21FF24530005730FC /* ConstraintInsetTarget.swift in Sources */,
 				816BDB031FF24530005730FC /* ConstraintRelatableTarget.swift in Sources */,
+				8107F8CC1FF3809A00A4039F /* LFPhotosViewModel.swift in Sources */,
 				816BDAFE1FF24530005730FC /* ConstraintMakerRelatable.swift in Sources */,
 				816BDAF41FF24530005730FC /* ConstraintLayoutGuide+Extensions.swift in Sources */,
 				816BDB0C1FF24530005730FC /* Typealiases.swift in Sources */,
@@ -543,18 +593,24 @@
 				816BDB021FF24530005730FC /* ConstraintPriorityTarget.swift in Sources */,
 				816BDABA1FF213C4005730FC /* LFPhotoHandleManager.swift in Sources */,
 				816BDAF31FF24530005730FC /* ConstraintItem.swift in Sources */,
+				815F9BF41FF4D0FF00AA5F67 /* LFPhotoBrowseViewModel.swift in Sources */,
 				816BDAFF1FF24530005730FC /* ConstraintMultiplierTarget.swift in Sources */,
+				815F9BED1FF49F0D00AA5F67 /* LFPhotoPreviewController.swift in Sources */,
 				816BDB011FF24530005730FC /* ConstraintPriority.swift in Sources */,
+				8107F8C61FF373CA00A4039F /* LFPhotosCell.swift in Sources */,
 				816BDAED1FF24530005730FC /* ConstraintConfig.swift in Sources */,
 				816BDAFD1FF24530005730FC /* ConstraintMakerPriortizable.swift in Sources */,
 				816BDAFB1FF24530005730FC /* ConstraintMakerExtendable.swift in Sources */,
+				8107F8C81FF37D6600A4039F /* LFPhotoBottomReusableView.swift in Sources */,
 				816BDABE1FF23060005730FC /* LFPhotoCacheManager.swift in Sources */,
 				816BDAB71FF211F8005730FC /* LFPhotoNavigationViewModel.swift in Sources */,
 				816BDA771FF1EEDB005730FC /* AppDelegate.swift in Sources */,
+				815F9BF21FF4D0CE00AA5F67 /* LFPhotoBrowseController.swift in Sources */,
 				816BDAEE1FF24530005730FC /* ConstraintConstantTarget.swift in Sources */,
 				816BDB0F1FF24610005730FC /* LFPhotoGroupViewModel.swift in Sources */,
 				816BDB121FF24D1D005730FC /* LFPhotoStore.swift in Sources */,
 				816BDAFA1FF24530005730FC /* ConstraintMakerEditable.swift in Sources */,
+				8107F8C31FF36BDE00A4039F /* LFPhotoGroupViewController.swift in Sources */,
 				816BDB041FF24530005730FC /* ConstraintRelation.swift in Sources */,
 				816BDAEF1FF24530005730FC /* ConstraintDescription.swift in Sources */,
 				816BDB141FF24DB3005730FC /* LFPhotoConfig.swift in Sources */,
